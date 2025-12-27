@@ -21,6 +21,14 @@ Cargo workspace layout:
 cargo build --workspace
 ```
 
+## Submodules
+
+This repo uses a Truck fork as a submodule. After cloning, run:
+
+```bash
+git submodule update --init --recursive
+```
+
 ## Tests
 
 ```bash
