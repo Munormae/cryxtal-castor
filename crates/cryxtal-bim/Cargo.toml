@@ -1,0 +1,10 @@
+[package]
+name = "cryxtal-bim"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+cryxtal-base = { path = "../cryxtal-base" }
+cryxtal-topology = { path = "../cryxtal-topology" }
+serde.workspace = true

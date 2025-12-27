@@ -1,0 +1,10 @@
+[package]
+name = "cryxtal-base"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+thiserror.workspace = true
+uuid.workspace = true
+serde.workspace = true

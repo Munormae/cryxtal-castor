@@ -1,0 +1,10 @@
+[package]
+name = "cryxtal-geometry"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+cryxtal-base = { path = "../cryxtal-base" }
+truck-base.workspace = true
+truck-geometry.workspace = true

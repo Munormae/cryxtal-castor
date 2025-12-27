@@ -1,0 +1,14 @@
+[package]
+name = "cryxtal-io"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+cryxtal-base = { path = "../cryxtal-base" }
+cryxtal-topology = { path = "../cryxtal-topology" }
+truck-base.workspace = true
+truck-stepio.workspace = true
+truck-meshalgo.workspace = true
+truck-polymesh.workspace = true

@@ -1,0 +1,58 @@
+
+[workspace]
+members = [
+  "crates/cryxtal-base",
+  "crates/cryxtal-geometry",
+  "crates/cryxtal-topology",
+  "crates/cryxtal-shapeops",
+  "crates/cryxtal-bim",
+  "crates/cryxtal-io",
+  "crates/cryxtal-cli",
+  "crates/cryxtal-view",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2024"
+version = "0.1.0"
+license = "Apache-2.0"
+
+[workspace.dependencies]
+anyhow = "1.0.86"
+thiserror = "1.0.61"
+uuid = { version = "1.9.1", features = ["v4", "serde"] }
+serde = { version = "1.0.203", features = ["derive"] }
+serde_json = "1.0.120"
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter", "fmt"] }
+clap = { version = "4.5.8", features = ["derive"] }
+cgmath = "0.18.0"
+egui = "0.33.3"
+egui-wgpu = "0.33.3"
+egui-winit = "0.33.3"
+wgpu = "27.0.1"
+winit = "0.30.12"
+truck-base = "0.5.0"
+truck-geometry = "0.5.0"
+truck-topology = "0.6.0"
+truck-modeling = "0.6.0"
+truck-shapeops = "0.4.0"
+truck-stepio = "0.3.0"
+truck-polymesh = "0.6.0"
+truck-meshalgo = "0.4.0"
+pollster = "0.4.0"
+image = "0.25.9"
+truck-platform = "0.6.0"
+truck-rendimpl = "0.6.0"
+
+[patch.crates-io]
+truck-base = { path = ".tmp_truck/truck-base" }
+truck-geometry = { path = ".tmp_truck/truck-geometry" }
+truck-topology = { path = ".tmp_truck/truck-topology" }
+truck-modeling = { path = ".tmp_truck/truck-modeling" }
+truck-shapeops = { path = ".tmp_truck/truck-shapeops" }
+truck-stepio = { path = ".tmp_truck/truck-stepio" }
+truck-polymesh = { path = ".tmp_truck/truck-polymesh" }
+truck-meshalgo = { path = ".tmp_truck/truck-meshalgo" }
+truck-platform = { path = ".tmp_truck/truck-platform" }
+truck-rendimpl = { path = ".tmp_truck/truck-rendimpl" }

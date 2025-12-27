@@ -1,0 +1,50 @@
+[package]
+name = "cryxtal-view"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+clap.workspace = true
+cgmath = { workspace = true, optional = true }
+cryxtal-base = { path = "../cryxtal-base" }
+cryxtal-bim = { path = "../cryxtal-bim" }
+cryxtal-io = { path = "../cryxtal-io" }
+cryxtal-shapeops = { path = "../cryxtal-shapeops" }
+cryxtal-topology = { path = "../cryxtal-topology" }
+egui = { workspace = true, optional = true }
+egui-wgpu = { workspace = true, optional = true, features = ["winit"] }
+egui-winit = { workspace = true, optional = true }
+image = { workspace = true, optional = true }
+pollster = { workspace = true, optional = true }
+serde = { workspace = true, optional = true }
+serde_json = { workspace = true, optional = true }
+truck-base = { workspace = true, optional = true }
+truck-meshalgo = { workspace = true, optional = true }
+truck-polymesh = { workspace = true, optional = true }
+truck-modeling = { workspace = true }
+truck-platform = { workspace = true, optional = true }
+truck-rendimpl = { workspace = true, optional = true }
+wgpu = { workspace = true, optional = true }
+winit = { workspace = true, optional = true }
+
+[features]
+default = ["gui"]
+gui = [
+    "egui",
+    "egui-wgpu",
+    "egui-winit",
+    "cgmath",
+    "pollster",
+    "image",
+    "serde",
+    "serde_json",
+    "truck-base",
+    "truck-meshalgo",
+    "truck-polymesh",
+    "truck-platform",
+    "truck-rendimpl",
+    "wgpu",
+    "winit",
+]

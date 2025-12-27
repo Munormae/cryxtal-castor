@@ -1,0 +1,3 @@
+[submodule ".tmp_truck"]
+	path = .tmp_truck
+	url = https://github.com/Munormae/cryxtal-truck.git

@@ -1,0 +1,24 @@
+[package]
+name = "cryxtal-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+clap.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+cryxtal-base = { path = "../cryxtal-base" }
+cryxtal-bim = { path = "../cryxtal-bim" }
+cryxtal-topology = { path = "../cryxtal-topology" }
+cryxtal-shapeops = { path = "../cryxtal-shapeops" }
+cryxtal-io = { path = "../cryxtal-io" }
+
+[[example]]
+name = "export_box_step"
+path = "../../examples/export_box_step.rs"
+
+[[example]]
+name = "plate_with_hole_to_obj"
+path = "../../examples/plate_with_hole_to_obj.rs"
